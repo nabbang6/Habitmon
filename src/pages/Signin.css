@@ -1,0 +1,29 @@
+.Signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100vh; 
+    gap : 250px;
+}
+
+.signin-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.signin-slogan {
+    font-size: 14px;
+    color: #ff8c94;
+    margin-bottom: 40px;
+}
+
+.signin-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}

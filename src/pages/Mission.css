@@ -1,0 +1,125 @@
+/* 미리 권장: box-sizing과 기본 margin/padding 제거 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 전체 Mission 컨테이너 */
+.Mission {
+  /* Profile처럼 모바일 폭 제한 + 가운데 정렬 */
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.calendar-next {
+  border: none;
+  background-color: white;
+  color: gray;
+}
+
+/* 체크리스트 타이틀 */
+.checklist-title {
+  margin: 20px 0 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #f097a3;
+  padding-bottom: 10px;
+}
+
+/* 달력 영역 */
+.calender {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* 달력 헤더 (월 이동 버튼, 년.월) */
+.calendar-header {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 요일 스타일 */
+.weekdays {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.weekdays .sunday {
+  color: #f097a3;
+}
+
+/* 날짜 스타일 */
+.dates {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+.dates .selected {
+  background-color: #f097a3;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* 체크리스트 영역 */
+.habit-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 70px;
+  /* 내용이 많으면 스크롤 가능하도록 하고 싶다면
+     max-height: calc(100vh - 300px);
+     overflow-y: auto; 
+  */
+}
+
+/* "습관 추가" 버튼 컨테이너 */
+.habit-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px; /* 하단 네비게이션 고려 */
+}
+
+/* 하단 메뉴 (HomeMenu) - Profile처럼 바닥 고정 */
+.habit-menu {
+  position: fixed; /* 화면 하단 고정 */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px; /* Mission과 동일한 너비 */
+  background: white;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}

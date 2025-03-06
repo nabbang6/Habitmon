@@ -1,0 +1,64 @@
+/* 습관 리스트 컨테이너 */
+.HabitList {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 */
+.HabitList-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 습관 체크리스트 */
+.HabitList-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* ✅ 간격 조정 */
+}
+
+.HabitList-item {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* ✅ 체크박스와 텍스트 간격 조정 */
+  font-size: 14px;
+  color: #555;
+}
+
+/* 체크박스 스타일 */
+.HabitList-item input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f097a3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.HabitList-item input:checked {
+  background-color: #f097a3;
+}
+
+.HabitList-item input:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

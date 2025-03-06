@@ -1,0 +1,112 @@
+/* 프로필 페이지 전체 */
+.Profile {
+  max-width: 400px; /* 모바일에 맞게 조정 */
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+}
+
+/* 프로필 헤더 */
+.profile-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 프로필 메인 정보 */
+.profile-main {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nickname {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 100px;
+}
+
+.email {
+  font-size: 14px;
+  color: #ff8c94; /* 연한 빨간색 */
+  margin-bottom: 5px;
+}
+
+.process {
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.process > span {
+  font-size: 14px;
+  color: #ff8c94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process::before {
+  content: "🌱";
+  margin-right: 5px;
+}
+
+/* 프로필 편집 버튼 */
+button[type="text"] {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff8c94;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="text"]:hover {
+  background-color: #ff8c94;
+}
+
+/* 구분선 */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* 상태 버튼 (비밀번호 재설정, 로그아웃) */
+.profile-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px; /* 하단 네비게이션 고려 */
+}
+
+.profile-state button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #ff8c94;
+  cursor: pointer;
+}
+
+.profile-state button:hover {
+  color: #ff8c94;
+}
+
+/* 하단 네비게이션 */
+.profile-footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px; /* Profile과 동일한 너비 */
+  background: white;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}

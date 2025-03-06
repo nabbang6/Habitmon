@@ -1,0 +1,65 @@
+.button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  transition: all 0.2s ease-in-out; /* 애니메이션 적용 */
+}
+
+/* Primary 버튼 */
+.button.primary {
+  background-color: #ff8c94;
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: #ff6f7a; /* 조금 더 진한 색으로 변경 */
+}
+
+.button.primary:active {
+  transform: scale(0.95); /* 클릭 시 크기 줄어듦 */
+}
+
+/* Secondary 버튼 */
+.button.secondary {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.button.secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.button.secondary:active {
+  transform: scale(0.95);
+}
+
+/* Third 버튼 (텍스트 버튼) */
+.button.third {
+  background: none;
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.button.third:hover {
+  color: #444; /* 살짝 진해짐 */
+}
+
+.button.third:active {
+  transform: scale(0.95);
+}
+
+/* 버튼 비활성화 상태 */
+.button.disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+  pointer-events: none; /* 클릭 방지 */
+}

@@ -1,0 +1,55 @@
+.habitmon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.habitmon-image {
+  width: 250px;
+  height: 250px;
+}
+
+.habitmon-subtext {
+  color: #666;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Little-habitmon {
+  padding: 200px;
+}
+
+.habitmon-input {
+  width: 100%;
+  margin-top: 35px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f097a3;
+
+  border: none;
+  border-radius: 5px;
+  background-color: none;
+  outline: none;
+  text-align: center;
+}
+
+.habitmon-input::placeholder {
+  color: #f097a3;
+  opacity: 1;
+}
+
+.habitmon-button {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}

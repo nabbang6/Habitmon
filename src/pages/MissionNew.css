@@ -1,0 +1,113 @@
+/* (선택) box-sizing 초기화 및 기본 마진 제거 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 전체 컨테이너 */
+.MissionNew {
+  max-width: 400px; /* 모바일 화면 폭처럼 제한 */
+  width: 100%;
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 20px; /* 내부 여백 */
+  background-color: #fff;
+  min-height: 100vh; /* 세로 화면 가득 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 상단 안내 문구 */
+.missionnew-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* 첫 줄(큰 제목) */
+.missionnew-header > div:nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f097a3; /* 핑크색 */
+  padding-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* 두 번째 줄(소제목, 예: "지금 많은 20대들이...") */
+.missionnew-header > div:nth-child(2) {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.3;
+  padding-bottom: 30px;
+}
+
+/* 습관 만들기 영역 */
+.missionnew-create-habit {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  /* InputField 컴포넌트 내부 스타일은 별도 조정 가능 */
+}
+
+/* 챌린지 기간 영역 */
+.missionnew-create-date {
+  margin-bottom: 285px;
+}
+
+/* 챌린지 기간 라벨 (예: '챌린지 기간') */
+.missionnew-create-date .challenge {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* 날짜 입력 컨테이너 */
+.missionnew-create-date .date {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 입력 간격 */
+}
+
+/* 실제 date input 스타일 (예시) */
+.missionnew-create-date .date input[type="date"] {
+  width: 130px;
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* 날짜 사이에 들어가는 ~ 기호 */
+.missionnew-create-date .date span {
+  font-size: 16px;
+  color: #333;
+  margin: 0 5px;
+}
+
+/* ──────────────────────────────────────────────
+     기존 코드 유지: 버튼 아래쪽 & 하단 메뉴 고정 
+     ────────────────────────────────────────────── */
+
+/* "습관 추가" 버튼 영역 */
+.habit-add {
+  /* 고정 메뉴에 겹치지 않도록 띄움 */
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  flex-direction: column;
+}
+
+/* 하단 메뉴 (HomeMenu) 고정 */
+.habit-menu {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px; /* .MissionNew와 동일한 너비 */
+  background: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
